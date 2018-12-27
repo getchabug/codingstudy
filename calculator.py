@@ -14,8 +14,12 @@ class Calculator:
 		return self.result
 
 	def multiply(self, num): #jisung 
-		self.result+=num
+		self.result*=num
 		return self.result	
+
+	def sub(self, num):#smart boy
+		self.result-=num
+		return self.result 
 cal1=Calculator()
 cal2=Calculator()
 print(cal1.adder(3))
@@ -29,3 +33,6 @@ print(cal1.multiply(3))
 print(cal1.multiply(4))
 print(cal2.multiply(3))
 print(cal2.multiply(7))
+print("test")
+print(cal1.sub(10))
+print(cal1.sub(1))
