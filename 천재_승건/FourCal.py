@@ -13,4 +13,4 @@ class FourCal:
 		return result
 	def div(self):
 		result =self.first/self.second
-		return result
+		return resultn
