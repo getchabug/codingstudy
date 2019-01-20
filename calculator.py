@@ -15,7 +15,7 @@ class Calculator:
 
 	def multiply(self, num): #jisung 
 		self.result*=num
-		return self.result	
+		return self.resultn	
 
 	def sub(self, num):#smart boy
 		self.result-=num
