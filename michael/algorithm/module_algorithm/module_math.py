@@ -21,11 +21,19 @@ class Math:
         return self.result
     #param1,param2를 입력값으로 받아서,나누기 연산을 하고self.result에 저장한다음 return
     def sub_2param(self,param1,param2):
-        self.result=param1/param2
-
+        self.result=param%param2
 
         return self.result
     #param1,param2를 입력값으로 받아서,빼기 연산을 하고self.result에 저장한다음 return
     def divide_2param(self,param1,param2):
         self.result=param1-param2
         return self.result
+
+    def sum_n(self, param1):
+
+        for sum_target in range(1, param1+1):
+            self.result = self.result + sum_target
+        return self.result
+
+    def mul_n(self, param1):
+        print("hello")
