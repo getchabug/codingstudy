@@ -23,4 +23,19 @@ class Math:
     def min_2param(self,param1,param2):
         self.result=param1-param2
 
+
+
+
         return self.resut
+
+
+
+
+
+
+
+
+    def sum_n(self,param1):
+        for sum_target in range(1,param1+1):
+            self.result= self.result+sum_target
+        return self.result
