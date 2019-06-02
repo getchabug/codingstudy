@@ -13,3 +13,6 @@ class Math:
         for mul_target in range(1,param1+1):
             self.result=self.result*mul_target
         return self.result
+    def biggest(self, list1):
+        list1.sort()
+        return list1.pop()
