@@ -1,4 +1,4 @@
-#-*- coding: utf-8 -*-
+#-- coding: utf-8 --
 
 #수학 클래스 정의
 class Math:
@@ -30,3 +30,19 @@ class Math:
     def min_2param(self,param1, param2):
         self.result = param1 / param2
         return self.result
+
+    def sum_n(self,param1):
+
+        for sum_target in range(1,param1+1):
+            self.result = self.result + sum_target
+
+        return self.result
+    #param1을 입력값으로 받아서, 곱하기를 하고
+    def mul_n(self,param1):
+        #
+        for mul_target in range(1,param1+1):
+            self.result = self.result + mul_target
+
+        return self.result
+
+
