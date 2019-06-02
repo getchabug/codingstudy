@@ -28,12 +28,15 @@ class Math:
     def divide_2param(self,param1,param2):
         self.result=param1-param2
         return self.result
-
+    #param1을 입력값으로 받아서,1부터 param1 까지 다 더한다.
     def sum_n(self, param1):
 
         for sum_target in range(1, param1+1):
             self.result = self.result + sum_target
         return self.result
-
+    #param1을 입력값으로 받아서,1부터 param1 까지 곱한다.
     def mul_n(self, param1):
-        print("hello")
+
+        for mul_target in range(1,param1+1):
+            self.result = self.result * mul_target
+        return self.result
