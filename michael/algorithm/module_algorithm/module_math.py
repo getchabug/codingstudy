@@ -45,4 +45,7 @@ class Math:
         list1.sort()
         return list1.pop()
 
+    def smallest(self,list2):
+        list2.sort()
+        return list2.pop(0)
 
