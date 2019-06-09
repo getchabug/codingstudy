@@ -4,7 +4,7 @@ test_class = Math()
 
 a =  [17,92,18,33,58,7,33,42]
 a.sort()
-print(test_class.biggest(a))
+print(test_class.smallest(a))
 
 
 

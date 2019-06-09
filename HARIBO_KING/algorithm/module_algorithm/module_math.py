@@ -50,6 +50,9 @@ class Math:
         list1.sort()
         return list1.pop()
 
+    def smallest(self,list1):
+        list1.sort()
+        return list1.pop(0)
 
 
 
