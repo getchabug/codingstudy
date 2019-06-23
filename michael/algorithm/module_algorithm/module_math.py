@@ -63,3 +63,12 @@ class Math:
         for value_idx, value_Count in enumerate(values):
             if value_Count < 2:
                 return keys[value_idx]
+    def fact(n):
+        f=1
+        for i in range(1,n+1):
+            f = f*i
+        return f
+
+print(fact(1))
+print(fact(5))
+print(fact(10))
