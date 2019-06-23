@@ -1,4 +1,5 @@
 #--coding:utf-8--
+from collections import Counter
 a=[1,2,3,4,5]
 class Math:
     def __init__(self):
@@ -22,6 +23,21 @@ class Math:
     def smallest(self, list1):
         list1.sort()
         return list1.pop(0)
+    def same_name(self,list1):
+        test_dict = dict(Counter(["Tom", "Jerry", "MIke", "Tom"]))
+        keys = list(test_dict.keys())
+        values = list(test_dict.values())
+        for value_idx, value_count in enumerate(values):
+            if value_count > 1:
+                return keys[value_idx]
+    def different_name(self,list1):
+        test_dict = dict(Counter(["Tom", "Jerry", "MIke", "Tom"]))
+        keys = list(test_dict.keys())
+        values = list(test_dict.values())
+        for value_idx, value_count in enumerate(values):
+            if value_count < 2:
+                return keys[value_idx]
+
         # cal1=([1,2,3,4,5])
 # class  cal1:
 #     def sum(self, param11):
@@ -35,6 +51,8 @@ class Math:
 #             total / len(self.param1)
 #         return tatal
 # print(cal1.sum())
+
+
 
 
 a.sort

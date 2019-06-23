@@ -1,6 +1,9 @@
 #-*- coding: utf-8 -*-
 
 #수학 클래스 정의
+
+from collections import Counter
+
 class Math:
 
 
@@ -50,6 +53,76 @@ class Math:
     def biggest(self, list1):
         list1.sort()
         return list1.pop()
+
+
+    def smallest(self, list1):
+        list1.sort()
+        return list1.pop(0)
+
+
+
+    def yeeruem(self, list1):
+        from collections import Counter
+        test_dict = dict(Counter(["tom", "jerry", "tom", "mike"]))
+        keys = list(test_dict.keys())
+        values = list(test_dict.values())
+        # print(values)
+        for value_idx, values_count in enumerate(values):
+            # print(value_idx)
+            # print(value_count)
+            if values_count > 1:
+                 return keys[value_idx]
+
+    list1.sort()
+
+
+
+    def everyone(self,list3):
+        test_dict=(Counter(['Tom','Jerry','Mike','Tom']))
+        keys = list(test_dict.keys())
+        values = list(test_dict.values())
+        for value_idx, value_Count in enumerate(values):
+            if value_Count > 1:
+                return keys[value_idx]
+
+    def every(self,list4):
+        test_dict=dict(Counter(['Tom','Mike','jerry','Tom']))
+        keys = list(test_dict.keys())
+        values = list(test_dict.values())
+        for value_idx, value_Count in enumerate(values):
+            if value_Count < 2:
+                return keys[value_idx]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

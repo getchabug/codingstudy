@@ -6,5 +6,6 @@ print(test_class.smallest(a))
 sum=0
 for i in range(1,11):
     sum=sum+i
-
+b=["Tom","Jerry","Mike","Tom"]
 print(sum)
+print(test_class.different_name(b))

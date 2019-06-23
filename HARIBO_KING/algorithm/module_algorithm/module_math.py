@@ -1,6 +1,7 @@
 #-- coding: utf-8 --
 
 #수학 클래스 정의
+from collections import Counter
 class Math:
 
     #클래스 내에서 공통으로 사용하는 변수 정의
@@ -54,27 +55,21 @@ class Math:
         list1.sort()
         return list1.pop(0)
 
+    def everyone(self,list1):
+        test_dict = dict(Counter(["Tom", "Jerry", "Mike", "Tom"]))
+        keys = list(test_dict.keys())
+        values = list(test_dict.values())
+        for value_idx, value_count in enumerate(values):
+            if value_count > 1:
+                return keys[value_idx]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    def every(self, list2):
+        test_dicts =dict(Counter(["Tom", "Jerry", "Mike", "Tom"]))
+        keys = list(test_dicts.keys())
+        values = list(test_dicts.values())
+        for value_idx, value_Count in enumerate(values):
+            if value_Count < 2:
+                return keys[value_idx]
 
 
 
