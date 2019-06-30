@@ -37,6 +37,15 @@ class Math:
         for value_idx, value_count in enumerate(values):
             if value_count < 2:
                 return keys[value_idx]
+    def biggest(n):
+        big = 0
+        for i in a:
+            if big < i:
+                big=i
+        return big
+n=[100,2,3,4,5]
+
+
 
         # cal1=([1,2,3,4,5])
 # class  cal1:
