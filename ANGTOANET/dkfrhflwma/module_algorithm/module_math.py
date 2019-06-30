@@ -65,4 +65,10 @@ class Math:
         for value_idx, value_count in enumerate(values):
             if value_count <2:
                 return keys[value_idx]
-
+    def biggest(n):
+        big=0
+        for i in n:
+            if big<i:
+                big=i
+        return big
+n=[1,2,3,4,5,6,7,100,9]
