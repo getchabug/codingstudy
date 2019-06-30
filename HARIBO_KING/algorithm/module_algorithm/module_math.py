@@ -72,13 +72,13 @@ class Math:
                 return keys[value_idx]
 
     def getMax(n):
-        max =
+        max = 0
         for i in n:
             if max < i:
                 max = i
         return max
     n = [1,100,300,2,99999,3,4]
 
-    print(getMax)
+    print(getMax(n))
 
 
