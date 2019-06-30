@@ -20,3 +20,4 @@ for i in  A:
         big = small
 print(big)
 print()
+print((a))
