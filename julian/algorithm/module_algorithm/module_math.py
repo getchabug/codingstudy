@@ -6,7 +6,6 @@ from collections import Counter
 
 class Math:
 
-
     #클래스 내에서 공통으로 사용하는 변수 정의
     def __init__(self):
         self.result = 0
@@ -98,33 +97,31 @@ class Math:
 
 
 
+    def getMax(n):
+        max = 0
+        for i in n:
+            if max < i:
+                max = i
+        return max
+    n = [1,100,300,2,999999,3,4]
+
+    print(getMax(n))
+
+    
 
 
+    def lcm(a, b):
 
+        if a > b:
+            i=a
+        else:
+            i=b
 
+        while (True):
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            if ((i % x == 0) and (i % y == 0)):
+                lcm = i
+                break
+            i += 1
+        return lcm
 
