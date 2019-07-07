@@ -65,10 +65,12 @@ class Math:
         for value_idx, value_count in enumerate(values):
             if value_count <2:
                 return keys[value_idx]
-    def biggest(n):
-        big=0
+    def getMax(n):
+        max=0
         for i in n:
-            if big<i:
-                big=i
-        return big
-n=[1,2,3,4,5,6,7,100,9]
+            if max<i:
+                max=i
+        return max
+    n=[1,2,3,4,5,7,100,9]
+
+    print(getMax(n))
