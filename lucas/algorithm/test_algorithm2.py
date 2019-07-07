@@ -20,4 +20,4 @@ for i in  A:
         big = small
 print(big)
 print()
-print((a))
+print(test_class.biggest(A)

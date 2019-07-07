@@ -16,3 +16,22 @@ print(cal1.avg())
 cal2=Calculator([6,7,8,9,10])
 print(cal2.sum_())
 print(cal2.avg())
+a=60
+b=25
+if a<b:
+    i=a
+elif a>b:
+    i=b
+
+while a%i < 1:
+    i-1
+
+
+
+
+
+
+
+
+
+

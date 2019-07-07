@@ -1,4 +1,5 @@
 #--coding:utf-8--
+n=[100,1000,2,3,4]
 from collections import Counter
 a=[1,2,3,4,5]
 class Math:
@@ -37,16 +38,24 @@ class Math:
         for value_idx, value_count in enumerate(values):
             if value_count < 2:
                 return keys[value_idx]
-    def biggest(n):
+    def biggest(self,list1):
         big = 0
-        for i in a:
+        for i in self.list1:
             if big < i:
                 big=i
         return big
-n=[100,2,3,4,5]
+        print(biggest(n))
+    def gcd(a, b):
+        i=min(a,b)#i를 a와b중에 더 작은수로 입력한다
+        while True:#무한반복한다
+            if a % i ==0 and b % i ==0:#만약 a/b의 나머지가 0이고 b/i나머지도 0이면
+                return i#i의값을 출력한다
+            i = i-1#아니면 i에 1을 뺀다
 
-
-
+    print(gcd(1,5))
+    print(gcd(3,6))
+    print(gcd(60,24))
+    print(gcd(81,27))
         # cal1=([1,2,3,4,5])
 # class  cal1:
 #     def sum(self, param11):
@@ -60,6 +69,19 @@ n=[100,2,3,4,5]
 #             total / len(self.param1)
 #         return tatal
 # print(cal1.sum())
+
+    def lcm(a,b):
+        if a>b:
+            i=a
+        else:
+            i=b
+        while True:
+            if((i%a==0)and(i%b==0)):
+                lcm = i
+                break
+            i += 1
+        return lcm
+    print(lcm(5,13))
 
 
 
