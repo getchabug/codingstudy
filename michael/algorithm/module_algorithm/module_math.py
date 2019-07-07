@@ -69,5 +69,27 @@ class Math:
             if big < i:
                 big=i
         return big
-    n=[100,2,3,4,5,7]
+    n=[100,2,999,4,5,7]
     print(biggest(n))
+    def gcd(a,b):
+        i=min(a,b)
+        while True:
+            if a%i ==0and b%i==0:
+                return i
+            i=i-1
+    print(gcd(1,5))
+    print(gcd(3,6))
+    print(gcd(60,24))
+    print(gcd(81,27))
+    def lcm(a,b):
+        if a>b:
+            i=a
+        else:
+            i=b
+        while True:
+            if((i%a==0)and(i%b==0)):
+                lcm = i
+                break
+            i += 1
+        return lcm
+    print(lcm(5,13))

@@ -1,6 +1,14 @@
-from module_math import Math
+a=32
+b=16
+if a<b:
+    i=a
+if a>b:
+    i=b
 
-test_class=Math()
-a=[17,92,18,33,58,7,33,42]
-a.sort()
-print(test_class.smallest(a))
+if i=a:
+    if b%i<1:
+        print(i)
+    else:
+        if b%(i-1)<1:
+            print(i-1)
+
