@@ -1,14 +1,10 @@
-a=32
-b=16
-if a<b:
-    i=a
-if a>b:
-    i=b
-
-if i=a:
-    if b%i<1:
-        print(i)
-    else:
-        if b%(i-1)<1:
-            print(i-1)
-
+a=[1,2,3]
+b=[]
+c=[]
+count=0
+if len(a)<3:
+    count+1
+print(count)
+def blockchecker(list_a,list_b,count):
+    list_b.append(list_a.pop())
+    count=count+1

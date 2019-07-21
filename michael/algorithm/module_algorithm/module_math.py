@@ -93,3 +93,8 @@ class Math:
             i += 1
         return lcm
     print(lcm(5,13))
+
+    def hanoi(list_a, list_b, list_c):
+        count=0
+        for element in list_a:
+            i
