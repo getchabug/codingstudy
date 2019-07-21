@@ -81,4 +81,7 @@ class Math:
 
     print(getMax(n))
 
+    def hanoi(self, list_a, list_b, list_c):
+        for element in list_a:
+            
 

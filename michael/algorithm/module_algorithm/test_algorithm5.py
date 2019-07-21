@@ -1,9 +1,14 @@
+def lcm(a, b):
+    if a > b:
+        i = a
+    else:
+        i = b
+    while True:
+        if ((i % a == 0) and (i % b == 0)):
+            lcm = i
+            break
+        i += 1
+    return lcm
 
-a=[100,2,3,4,5,7]
-big=0
-for i in a:
-    small=i
-    if big>small:continue
-    elif big<=small:
-        big=small
-print(big)
+
+print(lcm(5, 13))
