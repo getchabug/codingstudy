@@ -4,11 +4,11 @@ class happy:
 
 
 
-    def plus(self, a, b):
-        self.result = a+b
+    def divide(self, a, b):
+        self.result = a/b
         return self.result
 
 
 cal = happy()
-print(cal.plus(3, 4))
+print(cal.divide(3, 4))
 
