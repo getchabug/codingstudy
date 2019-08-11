@@ -1,28 +1,18 @@
 
-
-
-class game:
+class tenten:
     def __init__(self):
-        self.power=0
-        self.defence=0
+        self.tentan=0
+        self.height=0
+    def tanten(self,tentan,height):
+        self.tentan=tentan
+        self.height=height
+        tall=tentan*3
+        total=height+tall
+        return total
 
-    def baseball(self,power,defence):
-        self.power=power
-        self.defence=defence
-        if power > defence:
-            r=("홈런입니다")
-            return r
-        elif power < defence:
-            r=("스트라이크!!")
-            return r
-        elif power == defence:
-            r=("무승부!!")
-            return r
-fey=game()
-t=fey.baseball(4,5)
-print(t)
-
-
+fey=tenten()
+a=fey.tanten(5,140)
+print(a)
 
 
 
