@@ -1,11 +1,15 @@
-class p:
-    def __init__(self):
-        self.result = 0
+class ss:
 
-    def begi(self, a, b):
-        self.result = a - b
+    def mul_n(self, a):
+        print("hello")
+        for sum_target in range(1, a * 1):
+            self.result = self.result * sum_target
         return self.result
 
+cal = ss()
+print(cal.mul_n(3))
 
-cal = p()
-print(cal.begi(4, 6))
+
+
+
+
