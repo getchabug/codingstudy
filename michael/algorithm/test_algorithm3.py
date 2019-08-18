@@ -1,10 +1,8 @@
-a=[1,2,3]
-b=[]
-c=[]
-count=0
-if len(a)<3:
-    count+1
-print(count)
-def blockchecker(list_a,list_b,count):
-    list_b.append(list_a.pop())
-    count=count+1
+class coding:
+    def __init__(self):
+        self.result=0
+    def sum(self,a,b,c):
+        self.result=a*b+c
+        return self.result
+coding=coding()
+print(coding.sum(7,9,29))

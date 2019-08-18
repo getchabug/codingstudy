@@ -107,7 +107,7 @@ class Math:
 
     print(getMax(n))
 
-    
+
 
 
     def lcm(a, b):
@@ -124,4 +124,8 @@ class Math:
                 break
             i += 1
         return lcm
+
+
+    def blockcheker
+
 

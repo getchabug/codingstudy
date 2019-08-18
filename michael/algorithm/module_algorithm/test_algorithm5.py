@@ -1,14 +1,8 @@
-def lcm(a, b):
-    if a > b:
-        i = a
-    else:
-        i = b
-    while True:
-        if ((i % a == 0) and (i % b == 0)):
-            lcm = i
-            break
-        i += 1
-    return lcm
-
-
-print(lcm(5, 13))
+class coding:
+    def __init__(self):
+        self.result=0
+    def cal(self,a,b,c,d,e):
+        self.result=a**b+c-d*e
+        return self.result
+coding=coding()
+print(coding.cal(7,2,9,5,4))
