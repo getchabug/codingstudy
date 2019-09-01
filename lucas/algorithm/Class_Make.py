@@ -1,21 +1,19 @@
 
 
-class shpoping:
+class HP:
     def __init__(self):
-        self.have_money=0
-        self.price=0
-    def shop(self,have_money,price):
-        self.have_money=have_money
-        self.price=price
-        total=have_money-price
-        if price <= have_money:
-            r=("감사합니다 호갱님,거스름돈은 %s입니다"%total)
-            return r
+        self.hp=0
+        self.damage=0
+    def healpoint(self,hp,damage):
+        self.hp=hp
+        self.damage=damage
+        r=hp-damage
+        if r <= 0:
+            print("문명하셨습니다.")
         else:
-            r=("돈도 없는게어디서 절로꺼져!!")
             return r
-fey=shpoping()
-a=fey.shop(7000,600)
+fey=HP()
+a=fey.healpoint(70,600)
 print(a)
 
 
