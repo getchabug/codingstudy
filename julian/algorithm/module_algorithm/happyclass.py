@@ -1,17 +1,15 @@
-class S:
+class Math:
     def __init__(self):
         self.result = 0
 
 
 
-    def sum_n(self, a):
 
-        for sum_target in range(1, a + 1):
-            self.result = self.result + sum_target
+def mul_n(self, a):
+    print("hello")
+    for sum_target in range(1, a * 1):  # 그래서 1부터 param1을 곱한더
+        self.result = self.result * sum_target
+    return self.result
 
-        return self.result
-
-
-cal = S()
-print(cal.sum_n(6))
-
+cal=Math()
+print(cal.mul_n(3))
