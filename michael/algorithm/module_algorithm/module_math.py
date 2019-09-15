@@ -64,11 +64,21 @@ class Math:
             if value_Count < 2:
                 return keys[value_idx]
     def biggest(n):
-        big=0
-        for i in n:
-            if big < i:
-                big=i
-        return big
+        def biggest(n):
+
+            big = 0
+
+            for i in n:
+
+                if big < i:
+                    big = i
+
+            return big
+
+        n = [100, 2, 3, 4, 5, 7]
+
+        print(biggest(n))
+
     n=[100,2,999,4,5,7]
     print(biggest(n))
     def gcd(a,b):

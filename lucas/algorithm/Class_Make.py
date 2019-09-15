@@ -1,24 +1,19 @@
 
-class tenten:
+
+class delete:
     def __init__(self):
-        self.tentan=0
-        self.height=0
-    def tanten(self,tentan,height):
-        self.tentan=tentan
-        self.height=height
-        tall=tentan*3
-        total=height+tall
-        return total
-
-fey=tenten()
-a=fey.tanten(5,140)
+        self.X=0
+        self.a=[]
+    def dlt(self,X,a):
+        self.X=X
+        if X in a:
+            a.remove(X)
+            return a
+        else:
+            return a
+fey=delete()
+a=fey.dlt(3,[1,2,3,4,5])
 print(a)
-
-
-
-
-
-
 
 
 

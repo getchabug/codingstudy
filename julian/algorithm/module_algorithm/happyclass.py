@@ -1,15 +1,11 @@
-class ss:
-
-    def mul_n(self, a):
-        print("hello")
-        for sum_target in range(1, a * 1):
-            self.result = self.result * sum_target
-        return self.result
-
-cal = ss()
-print(cal.mul_n(3))
+class ddong:
+    def __init__(self):
+        self.result = 0
 
 
+    def smallest(self, list1):
+        list1.sort()
+        return list1.pop(0)
 
-
-
+cal = ddong()
+print(cal.smallest(2))

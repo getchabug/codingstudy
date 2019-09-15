@@ -1,8 +1,7 @@
-class coding:
-    def __init__(self):
-        self.result=0
-    def cal(self,a,b,c,d,e):
-        self.result=a**b+c-d*e
-        return self.result
-coding=coding()
-print(coding.cal(7,2,9,5,4))
+sorted_list=[1,20,30,40,60]
+search_list=70
+if search_list not in sorted_list:
+    print(-1)
+for idx_value,value in enumerate(sorted_list):
+    if search_list==value:
+        print(idx_value)
